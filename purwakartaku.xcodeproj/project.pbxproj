@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27E785242678FD8D00AFD5E3 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */; };
+		27E785252678FD8D00AFD5E3 /* HotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */; };
+		27E785282679065C00AFD5E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785272679065C00AFD5E3 /* Config.swift */; };
+		27E7852B26790B7200AFD5E3 /* ResponseHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */; };
+		27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852C26790BB900AFD5E3 /* DataHotel.swift */; };
 		27F71AEC267855D500BAD11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AEB267855D500BAD11C /* AppDelegate.swift */; };
 		27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AED267855D500BAD11C /* SceneDelegate.swift */; };
 		27F71AF0267855D500BAD11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AEF267855D500BAD11C /* ViewController.swift */; };
@@ -18,6 +23,11 @@
 
 /* Begin PBXFileReference section */
 		0117EF6FB4CE8962B56232E0 /* Pods-purwakartaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purwakartaku.release.xcconfig"; path = "Target Support Files/Pods-purwakartaku/Pods-purwakartaku.release.xcconfig"; sourceTree = "<group>"; };
+		27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
+		27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelTableViewCell.xib; sourceTree = "<group>"; };
+		27E785272679065C00AFD5E3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHotel.swift; sourceTree = "<group>"; };
+		27E7852C26790BB900AFD5E3 /* DataHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHotel.swift; sourceTree = "<group>"; };
 		27F71AE8267855D500BAD11C /* purwakartaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = purwakartaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F71AEB267855D500BAD11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F71AED267855D500BAD11C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		27E785202678FC9300AFD5E3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				27F71AEF267855D500BAD11C /* ViewController.swift */,
+				27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -62,8 +74,26 @@
 			children = (
 				27F71AF1267855D500BAD11C /* Main.storyboard */,
 				27F71AF6267855D700BAD11C /* LaunchScreen.storyboard */,
+				27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		27E785262679064A00AFD5E3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				27E785272679065C00AFD5E3 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		27E7852926790A8E00AFD5E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */,
+				27E7852C26790BB900AFD5E3 /* DataHotel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		27F71ADF267855D500BAD11C = {
@@ -87,11 +117,12 @@
 		27F71AEA267855D500BAD11C /* purwakartaku */ = {
 			isa = PBXGroup;
 			children = (
+				27E7852926790A8E00AFD5E3 /* Model */,
+				27E785262679064A00AFD5E3 /* Config */,
 				27E785212678FC9B00AFD5E3 /* View */,
 				27E785202678FC9300AFD5E3 /* Controller */,
 				27F71AEB267855D500BAD11C /* AppDelegate.swift */,
 				27F71AED267855D500BAD11C /* SceneDelegate.swift */,
-				27F71AEF267855D500BAD11C /* ViewController.swift */,
 				27F71AF4267855D700BAD11C /* Assets.xcassets */,
 				27F71AF9267855D700BAD11C /* Info.plist */,
 			);
@@ -168,6 +199,7 @@
 			files = (
 				27F71AF8267855D700BAD11C /* LaunchScreen.storyboard in Resources */,
 				27F71AF5267855D700BAD11C /* Assets.xcassets in Resources */,
+				27E785252678FD8D00AFD5E3 /* HotelTableViewCell.xib in Resources */,
 				27F71AF3267855D500BAD11C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +255,11 @@
 			files = (
 				27F71AF0267855D500BAD11C /* ViewController.swift in Sources */,
 				27F71AEC267855D500BAD11C /* AppDelegate.swift in Sources */,
+				27E785282679065C00AFD5E3 /* Config.swift in Sources */,
+				27E7852B26790B7200AFD5E3 /* ResponseHotel.swift in Sources */,
+				27E785242678FD8D00AFD5E3 /* HotelTableViewCell.swift in Sources */,
 				27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */,
+				27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
