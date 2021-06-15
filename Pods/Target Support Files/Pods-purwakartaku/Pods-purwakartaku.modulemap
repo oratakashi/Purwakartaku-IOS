@@ -1,0 +1,6 @@
+framework module Pods_purwakartaku {
+  umbrella header "Pods-purwakartaku-umbrella.h"
+
+  export *
+  module * { export * }
+}
