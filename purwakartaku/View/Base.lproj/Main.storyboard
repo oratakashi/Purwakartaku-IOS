@@ -39,6 +39,38 @@
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="93.75"/>
         </scene>
+        <!--Detail Hotel-->
+        <scene sceneID="mmm-VE-vsE">
+            <objects>
+                <viewController id="VJe-t4-Cnz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SE3-Ar-Jh1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-nc-ZRx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="ldg-dD-snC"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="NkN-j1-gk2" kind="embed" id="VhV-Lh-cob"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mnk-j7-P74"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mnk-j7-P74" firstAttribute="trailing" secondItem="dxd-nc-ZRx" secondAttribute="trailing" id="KNW-sH-jIn"/>
+                            <constraint firstItem="dxd-nc-ZRx" firstAttribute="leading" secondItem="mnk-j7-P74" secondAttribute="leading" id="ZmW-S5-8ZY"/>
+                            <constraint firstItem="dxd-nc-ZRx" firstAttribute="top" secondItem="mnk-j7-P74" secondAttribute="top" id="neP-Y0-f4S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detail Hotel" id="Llc-nB-Miu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cl-64-waS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="94"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7a-3j-bS0">
             <objects>
@@ -75,6 +107,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8j1-YZ-2fG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BU5-Nf-w0V">
+            <objects>
+                <viewController id="NkN-j1-gk2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ehR-8W-ALq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l29-Ef-6Ww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2319" y="-322"/>
         </scene>
     </scenes>
     <resources>

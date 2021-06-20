@@ -7,24 +7,56 @@
 
 import UIKit
 import Alamofire
+import SDWebImage
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var rvHotel: UITableView!
     
+    var data :Array = [DataHotel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        rvHotel.dataSource = self
+        rvHotel.register(UINib(nibName: "HotelTableViewCell", bundle: nil), forCellReuseIdentifier: "HotelTableViewCell")
         getHotel(){ (it) in
             switch it {
             case .failure(let error):
                 print(error.localizedDescription)
             case .success(let data) :
                 dump(data)
+                self.data.removeAll()
+                data.hotel.forEach { (row) in
+                    self.data.append(row)
+                    self.rvHotel.reloadData()
+                }
             }
         }
     }
 
     
+}
+
+extension ViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt position: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "HotelTableViewCell", for: position) as? HotelTableViewCell {
+            cell.ivImage.sd_setImage(with: URL(string: data[position.row].gambar_url), completed: nil)
+            cell.tvName.text = data[position.row].nama
+            cell.tvAddress.text = data[position.row].alamat
+            return cell
+        }else{
+            return UITableViewCell()
+        }
+    }
 }
 
 extension ViewController {
@@ -35,7 +67,6 @@ extension ViewController {
             if let error = result.error {
                 completion(.failure(error))
             }
-            dump(result.value?.hotel)
             guard result.response!.statusCode == 200 else { return }
             completion(.success(result.value!))
         }

@@ -12,6 +12,7 @@
 		27E785282679065C00AFD5E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785272679065C00AFD5E3 /* Config.swift */; };
 		27E7852B26790B7200AFD5E3 /* ResponseHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */; };
 		27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852C26790BB900AFD5E3 /* DataHotel.swift */; };
+		27ECDE45267F9009003A3849 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ECDE44267F9009003A3849 /* DetailViewController.swift */; };
 		27F71AEC267855D500BAD11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AEB267855D500BAD11C /* AppDelegate.swift */; };
 		27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AED267855D500BAD11C /* SceneDelegate.swift */; };
 		27F71AF0267855D500BAD11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F71AEF267855D500BAD11C /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		27E785272679065C00AFD5E3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHotel.swift; sourceTree = "<group>"; };
 		27E7852C26790BB900AFD5E3 /* DataHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHotel.swift; sourceTree = "<group>"; };
+		27ECDE44267F9009003A3849 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		27F71AE8267855D500BAD11C /* purwakartaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = purwakartaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F71AEB267855D500BAD11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27F71AED267855D500BAD11C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				27F71AEF267855D500BAD11C /* ViewController.swift */,
 				27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */,
+				27ECDE44267F9009003A3849 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				27E785242678FD8D00AFD5E3 /* HotelTableViewCell.swift in Sources */,
 				27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */,
 				27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */,
+				27ECDE45267F9009003A3849 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
