@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="utw-Dm-30K">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="utw-Dm-30K">
                                 <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
@@ -33,6 +33,7 @@
                     <navigationItem key="navigationItem" title="Hotel" id="U2b-FF-Yng"/>
                     <connections>
                         <outlet property="rvHotel" destination="utw-Dm-30K" id="HZd-ld-icn"/>
+                        <segue destination="VJe-t4-Cnz" kind="show" identifier="toDetail" id="EDO-Rt-U6I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -42,13 +43,13 @@
         <!--Detail Hotel-->
         <scene sceneID="mmm-VE-vsE">
             <objects>
-                <viewController id="VJe-t4-Cnz" sceneMemberID="viewController">
+                <viewController id="VJe-t4-Cnz" customClass="DetailViewController" customModule="purwakartaku" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SE3-Ar-Jh1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-nc-ZRx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="ldg-dD-snC"/>
                                 </constraints>
@@ -69,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cl-64-waS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2683" y="94"/>
+            <point key="canvasLocation" x="2735" y="128"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7a-3j-bS0">
@@ -115,12 +116,13 @@
                     <view key="view" contentMode="scaleToFill" id="ehR-8W-ALq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wEZ-Qg-F65"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l29-Ef-6Ww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2319" y="-322"/>
+            <point key="canvasLocation" x="3651" y="-72"/>
         </scene>
     </scenes>
     <resources>

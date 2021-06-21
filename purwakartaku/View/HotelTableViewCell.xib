@@ -17,10 +17,9 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6m4-Y0-ert">
-                        <rect key="frame" x="16" y="16" width="100" height="100"/>
+                        <rect key="frame" x="16" y="16" width="100" height="93"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="53Y-MR-p5x"/>
-                            <constraint firstAttribute="width" constant="100" id="HJt-Od-cns"/>
+                            <constraint firstAttribute="width" constant="100" id="nLI-tF-Fst"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeH-Zd-fCL">
@@ -30,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWR-z9-MOd">
-                        <rect key="frame" x="124" y="51.5" width="180" height="20.5"/>
+                        <rect key="frame" x="124" y="51.5" width="180" height="57.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
