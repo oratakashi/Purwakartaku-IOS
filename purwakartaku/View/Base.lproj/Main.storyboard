@@ -48,29 +48,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxd-nc-ZRx">
-                                <rect key="frame" x="0.0" y="140" width="414" height="300"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fx-Rz-0Jj">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbw-FO-Lt8">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="ldg-dD-snC"/>
+                                    <constraint firstItem="HDV-pP-ue5" firstAttribute="bottom" secondItem="Sbw-FO-Lt8" secondAttribute="bottom" id="F3T-4a-X16"/>
+                                    <constraint firstItem="Sbw-FO-Lt8" firstAttribute="leading" secondItem="HDV-pP-ue5" secondAttribute="leading" id="I56-5s-fNr"/>
+                                    <constraint firstItem="Sbw-FO-Lt8" firstAttribute="top" secondItem="5fx-Rz-0Jj" secondAttribute="top" id="Pvi-g9-i1s"/>
+                                    <constraint firstItem="Sbw-FO-Lt8" firstAttribute="height" secondItem="5fx-Rz-0Jj" secondAttribute="height" id="X7l-KF-l3c"/>
+                                    <constraint firstItem="Sbw-FO-Lt8" firstAttribute="width" secondItem="5fx-Rz-0Jj" secondAttribute="width" id="p97-KX-R7q"/>
+                                    <constraint firstItem="HDV-pP-ue5" firstAttribute="trailing" secondItem="Sbw-FO-Lt8" secondAttribute="trailing" id="rWu-Fm-T6x"/>
                                 </constraints>
-                                <connections>
-                                    <segue destination="NkN-j1-gk2" kind="embed" id="VhV-Lh-cob"/>
-                                </connections>
-                            </containerView>
+                                <viewLayoutGuide key="contentLayoutGuide" id="D6U-47-T1V"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HDV-pP-ue5"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mnk-j7-P74"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="mnk-j7-P74" firstAttribute="trailing" secondItem="dxd-nc-ZRx" secondAttribute="trailing" id="KNW-sH-jIn"/>
-                            <constraint firstItem="dxd-nc-ZRx" firstAttribute="leading" secondItem="mnk-j7-P74" secondAttribute="leading" id="ZmW-S5-8ZY"/>
-                            <constraint firstItem="dxd-nc-ZRx" firstAttribute="top" secondItem="mnk-j7-P74" secondAttribute="top" id="neP-Y0-f4S"/>
+                            <constraint firstItem="mnk-j7-P74" firstAttribute="bottom" secondItem="5fx-Rz-0Jj" secondAttribute="bottom" id="3kX-bW-hlo"/>
+                            <constraint firstItem="mnk-j7-P74" firstAttribute="trailing" secondItem="5fx-Rz-0Jj" secondAttribute="trailing" id="6Tg-Db-uoJ"/>
+                            <constraint firstItem="5fx-Rz-0Jj" firstAttribute="top" secondItem="mnk-j7-P74" secondAttribute="top" id="ZBu-v7-LQ6"/>
+                            <constraint firstItem="5fx-Rz-0Jj" firstAttribute="leading" secondItem="mnk-j7-P74" secondAttribute="leading" id="fJn-wv-tlK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Detail Hotel" id="Llc-nB-Miu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cl-64-waS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2735" y="128"/>
+            <point key="canvasLocation" x="2744.9275362318845" y="93.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7a-3j-bS0">
@@ -108,21 +119,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8j1-YZ-2fG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BU5-Nf-w0V">
-            <objects>
-                <viewController id="NkN-j1-gk2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ehR-8W-ALq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wEZ-Qg-F65"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="l29-Ef-6Ww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3651" y="-72"/>
         </scene>
     </scenes>
     <resources>

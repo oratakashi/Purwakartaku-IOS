@@ -13,7 +13,9 @@ class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if hotel != nil {
+            self.title = hotel?.nama
+        }
         // Do any additional setup after loading the view.
     }
     
