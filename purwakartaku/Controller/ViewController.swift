@@ -49,9 +49,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt position: IndexPath) {
-        let detail = DetailViewController(nibName: "DetailViewController", bundle: nil)
+        guard let detail = UIStoryboard(
+            name: "Main",
+            bundle: nil
+        ).instantiateViewController(
+            withIdentifier: "DetailViewController"
+        ) as? DetailViewController else { return }
         detail.hotel = data[position.row]
-        performSegue(withIdentifier: "toDetail", sender: self)
+        self.navigationController?.pushViewController(detail, animated: true)
     }
 }
 
