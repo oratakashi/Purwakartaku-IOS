@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cl-64-waS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2744.9275362318845" y="93.75"/>
+            <point key="canvasLocation" x="2764" y="392"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="w7a-3j-bS0">
@@ -183,6 +183,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="HJO-i5-dMP" kind="relationship" relationship="viewControllers" id="iWV-fP-gBc"/>
+                        <segue destination="43z-oi-VKh" kind="relationship" relationship="viewControllers" id="pJm-PT-HnO"/>
                         <segue destination="VqQ-wc-wAb" kind="relationship" relationship="viewControllers" id="gIB-7A-x1J"/>
                     </connections>
                 </tabBarController>
@@ -194,7 +195,7 @@
         <scene sceneID="AXb-fu-Zo6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HJO-i5-dMP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Hotel" image="building.columns" catalog="system" id="GlV-76-m4c"/>
+                    <tabBarItem key="tabBarItem" title="Hotel" image="Hotel" id="GlV-76-m4c"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="2Gi-7k-aR4">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -212,25 +213,147 @@
         <!--Profile-->
         <scene sceneID="UIf-k2-kYx">
             <objects>
-                <viewController id="VqQ-wc-wAb" sceneMemberID="viewController">
+                <viewController id="VqQ-wc-wAb" customClass="ProfileViewController" customModule="purwakartaku" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w1u-Xj-bMT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mna-eb-9JC">
+                                <rect key="frame" x="0.0" y="44" width="414" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="6DF-mQ-wMl"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photos" translatesAutoresizingMaskIntoConstraints="NO" id="FhI-aA-4wI">
+                                <rect key="frame" x="147" y="224" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="LpP-bE-Z84"/>
+                                    <constraint firstAttribute="width" constant="120" id="Scz-im-eyM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdul Hafiidh S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsz-RU-DzD">
+                                <rect key="frame" x="120.5" y="368" width="173" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="davidcreazy@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8n-Gh-MqL">
+                                <rect key="frame" x="128.5" y="402" width="157" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" systemColor="linkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWK-Lv-eAN">
+                                <rect key="frame" x="16" y="441" width="382" height="84"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="GithubIcon">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="  Open Github">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="openGithubWithSender:" destination="VqQ-wc-wAb" eventType="touchUpInside" id="efr-51-Yws"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K57-nu-0X2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="K57-nu-0X2" firstAttribute="trailing" secondItem="iWK-Lv-eAN" secondAttribute="trailing" constant="16" id="7Ml-mN-Mct"/>
+                            <constraint firstItem="Tsz-RU-DzD" firstAttribute="centerX" secondItem="w1u-Xj-bMT" secondAttribute="centerX" id="LgL-sw-79X"/>
+                            <constraint firstItem="iWK-Lv-eAN" firstAttribute="top" secondItem="z8n-Gh-MqL" secondAttribute="bottom" constant="22" id="OPh-gA-ahn"/>
+                            <constraint firstItem="Mna-eb-9JC" firstAttribute="leading" secondItem="K57-nu-0X2" secondAttribute="leading" id="Ppd-FP-yqh"/>
+                            <constraint firstItem="K57-nu-0X2" firstAttribute="trailing" secondItem="Mna-eb-9JC" secondAttribute="trailing" id="d5M-O4-FlE"/>
+                            <constraint firstItem="Mna-eb-9JC" firstAttribute="top" secondItem="K57-nu-0X2" secondAttribute="top" id="eIa-rY-deD"/>
+                            <constraint firstItem="z8n-Gh-MqL" firstAttribute="centerX" secondItem="w1u-Xj-bMT" secondAttribute="centerX" id="hqv-kj-2M0"/>
+                            <constraint firstItem="iWK-Lv-eAN" firstAttribute="leading" secondItem="K57-nu-0X2" secondAttribute="leading" constant="16" id="nRI-Rb-kWa"/>
+                            <constraint firstItem="z8n-Gh-MqL" firstAttribute="top" secondItem="Tsz-RU-DzD" secondAttribute="bottom" constant="5" id="teE-o3-pwO"/>
+                            <constraint firstItem="FhI-aA-4wI" firstAttribute="centerX" secondItem="w1u-Xj-bMT" secondAttribute="centerX" id="vgr-Fg-RO8"/>
+                            <constraint firstItem="Tsz-RU-DzD" firstAttribute="top" secondItem="FhI-aA-4wI" secondAttribute="bottom" constant="24" id="voS-0Q-pI5"/>
+                            <constraint firstItem="FhI-aA-4wI" firstAttribute="top" secondItem="K57-nu-0X2" secondAttribute="top" constant="180" id="xcY-Lh-cUU"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="l5I-Wu-K4e"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" id="l5I-Wu-K4e"/>
+                    <connections>
+                        <outlet property="btnGit" destination="iWK-Lv-eAN" id="ZOB-wM-VzH"/>
+                        <outlet property="ivBackground" destination="Mna-eb-9JC" id="VpL-JV-m3e"/>
+                        <outlet property="ivPhoto" destination="FhI-aA-4wI" id="5LP-Jo-c8r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjo-as-Mkv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="920" y="791"/>
+            <point key="canvasLocation" x="-1358" y="1186"/>
+        </scene>
+        <!--Kuliner-->
+        <scene sceneID="Rjh-zO-tcP">
+            <objects>
+                <viewController id="FNM-9O-EsU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPN-pj-3Zk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sJq-ZO-RrG">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Qx-Ba-iTM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sJq-ZO-RrG" firstAttribute="bottom" secondItem="3Qx-Ba-iTM" secondAttribute="bottom" id="3NG-jt-fso"/>
+                            <constraint firstItem="sJq-ZO-RrG" firstAttribute="trailing" secondItem="3Qx-Ba-iTM" secondAttribute="trailing" id="6XG-dB-jB0"/>
+                            <constraint firstItem="sJq-ZO-RrG" firstAttribute="top" secondItem="3Qx-Ba-iTM" secondAttribute="top" id="EB2-z2-Adw"/>
+                            <constraint firstItem="sJq-ZO-RrG" firstAttribute="leading" secondItem="3Qx-Ba-iTM" secondAttribute="leading" id="zTc-gs-TQe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Kuliner" id="VTb-rq-iru"/>
+                    <connections>
+                        <segue destination="VJe-t4-Cnz" kind="show" id="As5-Cb-qGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZ9-Yf-a7K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="777"/>
+        </scene>
+        <!--Kuliner-->
+        <scene sceneID="YPe-xl-3Qg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="43z-oi-VKh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kuliner" image="Resto" id="lya-mM-sKx"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Vjk-rn-16n">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FNM-9O-EsU" kind="relationship" relationship="rootViewController" id="hao-GV-D1w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9S-UQ-Qzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="777"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="As5-Cb-qGF"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="building.columns" catalog="system" width="128" height="113"/>
+        <image name="GithubIcon" width="64" height="64"/>
+        <image name="Hotel" width="24" height="24"/>
+        <image name="Photos" width="330" height="473"/>
+        <image name="Profile" width="24" height="24"/>
+        <image name="Resto" width="24" height="24"/>
         <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
-        <image name="person" catalog="system" width="128" height="117"/>
         <image name="phone" catalog="system" width="128" height="115"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

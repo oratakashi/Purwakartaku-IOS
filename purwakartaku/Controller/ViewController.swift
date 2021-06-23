@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         rvHotel.dataSource = self
-        rvHotel.register(UINib(nibName: "HotelTableViewCell", bundle: nil), forCellReuseIdentifier: "HotelTableViewCell")
+        rvHotel.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         rvHotel.delegate = self
         
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
@@ -66,7 +66,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt position: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "HotelTableViewCell", for: position) as? HotelTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: position) as? TableViewCell {
             cell.ivImage.sd_setImage(with: URL(string: data[position.row].gambar_url), completed: nil)
             cell.tvName.text = data[position.row].nama
             cell.tvAddress.text = data[position.row].alamat

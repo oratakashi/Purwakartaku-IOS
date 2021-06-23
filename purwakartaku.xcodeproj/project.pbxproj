@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27E785242678FD8D00AFD5E3 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */; };
-		27E785252678FD8D00AFD5E3 /* HotelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */; };
+		27E785242678FD8D00AFD5E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785222678FD8D00AFD5E3 /* TableViewCell.swift */; };
+		27E785252678FD8D00AFD5E3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E785232678FD8D00AFD5E3 /* TableViewCell.xib */; };
 		27E785282679065C00AFD5E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785272679065C00AFD5E3 /* Config.swift */; };
 		27E7852B26790B7200AFD5E3 /* ResponseHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */; };
 		27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E7852C26790BB900AFD5E3 /* DataHotel.swift */; };
@@ -19,13 +19,15 @@
 		27F71AF3267855D500BAD11C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F71AF1267855D500BAD11C /* Main.storyboard */; };
 		27F71AF5267855D700BAD11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F71AF4267855D700BAD11C /* Assets.xcassets */; };
 		27F71AF8267855D700BAD11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27F71AF6267855D700BAD11C /* LaunchScreen.storyboard */; };
+		27FAD3412683706A00545AB6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAD3402683706A00545AB6 /* ProfileViewController.swift */; };
+		27FAD34526838DAE00545AB6 /* DataKuliner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FAD34426838DAE00545AB6 /* DataKuliner.swift */; };
 		F7D9B912F9ED73F2244AC633 /* Pods_purwakartaku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F36433696F5987A0A9023C5 /* Pods_purwakartaku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0117EF6FB4CE8962B56232E0 /* Pods-purwakartaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purwakartaku.release.xcconfig"; path = "Target Support Files/Pods-purwakartaku/Pods-purwakartaku.release.xcconfig"; sourceTree = "<group>"; };
-		27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
-		27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelTableViewCell.xib; sourceTree = "<group>"; };
+		27E785222678FD8D00AFD5E3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		27E785232678FD8D00AFD5E3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		27E785272679065C00AFD5E3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseHotel.swift; sourceTree = "<group>"; };
 		27E7852C26790BB900AFD5E3 /* DataHotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHotel.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		27F71AF4267855D700BAD11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27F71AF7267855D700BAD11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27F71AF9267855D700BAD11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27FAD3402683706A00545AB6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27FAD34426838DAE00545AB6 /* DataKuliner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataKuliner.swift; sourceTree = "<group>"; };
 		5D0478AE475A5B348E1CE557 /* Pods-purwakartaku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purwakartaku.debug.xcconfig"; path = "Target Support Files/Pods-purwakartaku/Pods-purwakartaku.debug.xcconfig"; sourceTree = "<group>"; };
 		8F36433696F5987A0A9023C5 /* Pods_purwakartaku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_purwakartaku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,8 +70,9 @@
 			isa = PBXGroup;
 			children = (
 				27F71AEF267855D500BAD11C /* ViewController.swift */,
-				27E785222678FD8D00AFD5E3 /* HotelTableViewCell.swift */,
+				27E785222678FD8D00AFD5E3 /* TableViewCell.swift */,
 				27ECDE44267F9009003A3849 /* DetailViewController.swift */,
+				27FAD3402683706A00545AB6 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,7 +82,7 @@
 			children = (
 				27F71AF1267855D500BAD11C /* Main.storyboard */,
 				27F71AF6267855D700BAD11C /* LaunchScreen.storyboard */,
-				27E785232678FD8D00AFD5E3 /* HotelTableViewCell.xib */,
+				27E785232678FD8D00AFD5E3 /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -93,8 +98,8 @@
 		27E7852926790A8E00AFD5E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */,
-				27E7852C26790BB900AFD5E3 /* DataHotel.swift */,
+				27FAD3432683898900545AB6 /* kuliner */,
+				27FAD3422683898000545AB6 /* hotel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +135,23 @@
 				27F71AF9267855D700BAD11C /* Info.plist */,
 			);
 			path = purwakartaku;
+			sourceTree = "<group>";
+		};
+		27FAD3422683898000545AB6 /* hotel */ = {
+			isa = PBXGroup;
+			children = (
+				27E7852A26790B7200AFD5E3 /* ResponseHotel.swift */,
+				27E7852C26790BB900AFD5E3 /* DataHotel.swift */,
+			);
+			path = hotel;
+			sourceTree = "<group>";
+		};
+		27FAD3432683898900545AB6 /* kuliner */ = {
+			isa = PBXGroup;
+			children = (
+				27FAD34426838DAE00545AB6 /* DataKuliner.swift */,
+			);
+			path = kuliner;
 			sourceTree = "<group>";
 		};
 		6B96AE20B8B8FBB5C4DE21DB /* Pods */ = {
@@ -202,7 +224,7 @@
 			files = (
 				27F71AF8267855D700BAD11C /* LaunchScreen.storyboard in Resources */,
 				27F71AF5267855D700BAD11C /* Assets.xcassets in Resources */,
-				27E785252678FD8D00AFD5E3 /* HotelTableViewCell.xib in Resources */,
+				27E785252678FD8D00AFD5E3 /* TableViewCell.xib in Resources */,
 				27F71AF3267855D500BAD11C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +280,12 @@
 			files = (
 				27F71AF0267855D500BAD11C /* ViewController.swift in Sources */,
 				27F71AEC267855D500BAD11C /* AppDelegate.swift in Sources */,
+				27FAD34526838DAE00545AB6 /* DataKuliner.swift in Sources */,
 				27E785282679065C00AFD5E3 /* Config.swift in Sources */,
 				27E7852B26790B7200AFD5E3 /* ResponseHotel.swift in Sources */,
-				27E785242678FD8D00AFD5E3 /* HotelTableViewCell.swift in Sources */,
+				27E785242678FD8D00AFD5E3 /* TableViewCell.swift in Sources */,
 				27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */,
+				27FAD3412683706A00545AB6 /* ProfileViewController.swift in Sources */,
 				27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */,
 				27ECDE45267F9009003A3849 /* DetailViewController.swift in Sources */,
 			);

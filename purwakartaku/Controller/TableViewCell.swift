@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HotelTableViewCell: UITableViewCell {
+class TableViewCell: UITableViewCell {
 
     @IBOutlet weak var ivImage: UIImageView!
     @IBOutlet weak var tvName: UILabel!
