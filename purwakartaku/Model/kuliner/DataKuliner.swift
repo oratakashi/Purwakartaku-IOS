@@ -1,5 +1,5 @@
 //
-//  DataHotel.swift
+//  DataKuliner.swift
 //  purwakartaku
 //
 //  Created by oratakashi on 23/06/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DataKuliner {
+struct DataKuliner : Decodable {
     let id : Int?
     let nama : String
     let alamat : String

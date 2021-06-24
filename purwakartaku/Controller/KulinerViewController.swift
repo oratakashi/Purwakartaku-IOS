@@ -1,53 +1,52 @@
 //
-//  ViewController.swift
+//  KulinerViewController.swift
 //  purwakartaku
 //
-//  Created by oratakashi on 15/06/21.
+//  Created by oratakashi on 24/06/21.
 //
 
 import UIKit
 import Alamofire
 import SDWebImage
 
-class ViewController: UIViewController {
+class KulinerViewController: UIViewController {
 
-    @IBOutlet weak var rvHotel: UITableView!
+    @IBOutlet weak var rvKuliner: UITableView!
     
-    var data :Array = [DataHotel]()
+    var data :Array = [DataKuliner]()
     
     let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        rvHotel.dataSource = self
-        rvHotel.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-        rvHotel.delegate = self
         
+        rvKuliner.dataSource = self
+        rvKuliner.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        rvKuliner.delegate = self
+
         let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.medium
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
         
-        getHotel(){ (it) in
+        getKuliner(){ (it) in
             switch it {
-            case .failure(let error):
-                print(error.localizedDescription)
-            case .success(let data) :
-                dump(data)
-                self.data.removeAll()
-                data.hotel.forEach { (row) in
-                    self.data.append(row)
-                    self.rvHotel.reloadData()
-                }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                case .success(let data) :
+                    dump(data)
+                    self.data.removeAll()
+                    data.kuliner.forEach { (row) in
+                        self.data.append(row)
+                        self.rvKuliner.reloadData()
+                    }
             }
         }
     }
-
-    
 }
 
-extension ViewController: UITableViewDelegate {
+extension KulinerViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt position: IndexPath) {
         guard let detail = UIStoryboard(
             name: "Main",
@@ -55,12 +54,12 @@ extension ViewController: UITableViewDelegate {
         ).instantiateViewController(
             withIdentifier: "DetailViewController"
         ) as? DetailViewController else { return }
-        detail.hotel = data[position.row]
+        detail.kuliner = data[position.row]
         self.navigationController?.pushViewController(detail, animated: true)
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension KulinerViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count
     }
@@ -78,11 +77,11 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController {
-    func getHotel(completion: @escaping (Result<ResponseHotel, Error>) ->()) {
+extension KulinerViewController {
+    func getKuliner(completion: @escaping (Result<ResponseKuliner, Error>) ->()) {
         let headers: HTTPHeaders = ["Accept": "application/json"]
         present(alert, animated: true, completion: nil)
-        AF.request(Config().BASE_URL + "hotel", headers: headers).responseDecodable(of: ResponseHotel.self){ (result) in
+        AF.request(Config().BASE_URL + "kuliner", headers: headers).responseDecodable(of: ResponseKuliner.self){ (result) in
             if let error = result.error {
                 self.dismiss(animated: false, completion: nil)
                 completion(.failure(error))

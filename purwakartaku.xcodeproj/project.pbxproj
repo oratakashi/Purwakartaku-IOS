@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279C89822684C361003179D3 /* ResponseKuliner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C89812684C361003179D3 /* ResponseKuliner.swift */; };
+		279C89842684C542003179D3 /* KulinerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279C89832684C542003179D3 /* KulinerViewController.swift */; };
 		27E785242678FD8D00AFD5E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785222678FD8D00AFD5E3 /* TableViewCell.swift */; };
 		27E785252678FD8D00AFD5E3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E785232678FD8D00AFD5E3 /* TableViewCell.xib */; };
 		27E785282679065C00AFD5E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E785272679065C00AFD5E3 /* Config.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		0117EF6FB4CE8962B56232E0 /* Pods-purwakartaku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-purwakartaku.release.xcconfig"; path = "Target Support Files/Pods-purwakartaku/Pods-purwakartaku.release.xcconfig"; sourceTree = "<group>"; };
+		279C89812684C361003179D3 /* ResponseKuliner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseKuliner.swift; sourceTree = "<group>"; };
+		279C89832684C542003179D3 /* KulinerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KulinerViewController.swift; sourceTree = "<group>"; };
 		27E785222678FD8D00AFD5E3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		27E785232678FD8D00AFD5E3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		27E785272679065C00AFD5E3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				27E785222678FD8D00AFD5E3 /* TableViewCell.swift */,
 				27ECDE44267F9009003A3849 /* DetailViewController.swift */,
 				27FAD3402683706A00545AB6 /* ProfileViewController.swift */,
+				279C89832684C542003179D3 /* KulinerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				27FAD34426838DAE00545AB6 /* DataKuliner.swift */,
+				279C89812684C361003179D3 /* ResponseKuliner.swift */,
 			);
 			path = kuliner;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 				27E785242678FD8D00AFD5E3 /* TableViewCell.swift in Sources */,
 				27F71AEE267855D500BAD11C /* SceneDelegate.swift in Sources */,
 				27FAD3412683706A00545AB6 /* ProfileViewController.swift in Sources */,
+				279C89822684C361003179D3 /* ResponseKuliner.swift in Sources */,
 				27E7852D26790BB900AFD5E3 /* DataHotel.swift in Sources */,
 				27ECDE45267F9009003A3849 /* DetailViewController.swift in Sources */,
+				279C89842684C542003179D3 /* KulinerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
