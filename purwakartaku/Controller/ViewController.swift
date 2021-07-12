@@ -49,6 +49,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt position: IndexPath) {
+        tableView.deselectRow(at: position, animated: true)
         guard let detail = UIStoryboard(
             name: "Main",
             bundle: nil

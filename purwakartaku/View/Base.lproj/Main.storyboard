@@ -277,20 +277,20 @@
                                     <constraint firstAttribute="width" constant="120" id="Scz-im-eyM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Abdul Hafiidh S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsz-RU-DzD">
-                                <rect key="frame" x="120.5" y="368" width="173" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keisya Sella Nur Puspitasari Widiyaningsih" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsz-RU-DzD">
+                                <rect key="frame" x="16" y="368" width="382" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="davidcreazy@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8n-Gh-MqL">
-                                <rect key="frame" x="128.5" y="402" width="157" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="https://github.com/oratakashi/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8n-Gh-MqL">
+                                <rect key="frame" x="110.5" y="430.5" width="193.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWK-Lv-eAN">
-                                <rect key="frame" x="16" y="441" width="382" height="84"/>
+                                <rect key="frame" x="16" y="469.5" width="382" height="84"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" image="GithubIcon">
@@ -310,6 +310,8 @@
                         <viewLayoutGuide key="safeArea" id="K57-nu-0X2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tsz-RU-DzD" secondAttribute="trailing" constant="16" id="1CW-Mo-LNe"/>
+                            <constraint firstItem="Tsz-RU-DzD" firstAttribute="leading" secondItem="w1u-Xj-bMT" secondAttribute="leading" constant="16" id="5OA-ag-sFF"/>
                             <constraint firstItem="K57-nu-0X2" firstAttribute="trailing" secondItem="iWK-Lv-eAN" secondAttribute="trailing" constant="16" id="7Ml-mN-Mct"/>
                             <constraint firstItem="Tsz-RU-DzD" firstAttribute="centerX" secondItem="w1u-Xj-bMT" secondAttribute="centerX" id="LgL-sw-79X"/>
                             <constraint firstItem="iWK-Lv-eAN" firstAttribute="top" secondItem="z8n-Gh-MqL" secondAttribute="bottom" constant="22" id="OPh-gA-ahn"/>
@@ -393,7 +395,7 @@
     <resources>
         <image name="GithubIcon" width="64" height="64"/>
         <image name="Hotel" width="24" height="24"/>
-        <image name="Photos" width="330" height="473"/>
+        <image name="Photos" width="640" height="800"/>
         <image name="Profile" width="24" height="24"/>
         <image name="Resto" width="24" height="24"/>
         <image name="clock" catalog="system" width="128" height="121"/>
